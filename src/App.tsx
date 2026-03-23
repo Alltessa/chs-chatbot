@@ -329,7 +329,7 @@ export default function App() {
       </main>
 
       {/* Input Area */}
-      <footer className="bg-white/20 backdrop-blur-lg p-4 md:p-6">
+      <footer className="bg-white/20 backdrop-blur-lg p-2 md:p-2">
         <div className="max-w-3xl mx-auto">
           <div className="relative flex items-center">
             <input
@@ -338,12 +338,12 @@ export default function App() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}
               placeholder="Ask about enrollment, calendar, or school info..."
-              className="w-full bg-slate-50 border border-slate-200 rounded-2xl py-4 pl-5 pr-14 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#bb0202]/20 focus:border-[#bb0202] transition-all shadow-inner"
+              className="w-full bg-white/50 backdrop-blur-lg border border-slate-200 rounded-4xl py-4 pl-5 pr-14 text-slate-900 placeholder:text-slate-400 placeholder:font-extralight focus:outline-none focus:ring-2 focus:ring-[#bb0202]/20 focus:border-[#bb0202] transition-all shadow-inner"
             />
             <button
               onClick={handleSend}
               disabled={!input.trim() || isLoading}
-              className={`absolute right-2 p-2.5 rounded-xl transition-all ${
+              className={`absolute right-2 p-2.5 rounded-full transition-all ${
                 input.trim() && !isLoading
                   ? 'bg-[#bb0202] text-white shadow-lg shadow-[#bb0202]/20 hover:bg-[#bb0202]/80'
                   : 'bg-slate-200 text-slate-400 cursor-not-allowed'
