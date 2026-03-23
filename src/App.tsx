@@ -329,7 +329,7 @@ export default function App() {
       </main>
 
       {/* Input Area */}
-      <footer className="bg-white/40 backdrop-blur-lg border-t border-white/20 p-4 md:p-6">
+      <footer className="bg-white/20 backdrop-blur-lg p-4 md:p-6">
         <div className="max-w-3xl mx-auto">
           <div className="relative flex items-center">
             <input
@@ -353,7 +353,7 @@ export default function App() {
             </button>
           </div>
           <p className="text-[10px] text-center text-[#bb0202]/60 mt-3 uppercase tracking-widest font-medium">
-            Commonwealth High School AI Support • Always verify important dates
+            Commonwealth High School AI Support
           </p>
         </div>
       </footer>
