@@ -144,7 +144,7 @@ export default function App() {
         <div className="flex items-center gap-0.5">
           <div className="w-16 h-16 overflow-visible flex items-center justify-center shrink-0 bg-transparent">
             <img 
-              src="public/chs-logo.png" 
+              src="/chs-logo.png" 
               alt="Komhay AI Logo"
               className="w-full h-full object-cover"
               style={{ imageRendering: '-webkit-optimize-contrast' }}
@@ -262,7 +262,7 @@ export default function App() {
                   }`}>
                     {message.role === 'user' ? (
                       <img 
-                        src="public/user.jpg" 
+                        src="/user.jpg" 
                         alt="User"
                         className="w-full h-full object-cover"
                         referrerPolicy="no-referrer"
@@ -277,7 +277,7 @@ export default function App() {
                       />
                     ) : (
                       <img 
-                        src="public/chs-logo.png" 
+                        src="/chs-logo.png" 
                         alt="Komhay AI"
                         className="w-full h-full object-cover"
                         style={{ imageRendering: '-webkit-optimize-contrast' }}
